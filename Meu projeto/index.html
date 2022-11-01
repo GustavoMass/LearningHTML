@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<title>Curso ProgramadorBR</title>
+	<meta charset="utf-8">
+
+	<link href="style.css" rel="stylesheet">
+
+	<!--Abaixo está um css interno. Funciona, mas foi anulado na forma de comentário.
+
+		<style>
+			p{
+				color: black;
+			}
+		</style>-->
+
+</head>
+
+<body>
+	<h1>Princípios do HTML</h1>
+
+	<h2>Básico da escrita</h2>
+
+	<h3> Títulos</h3>
+
+	<p> Cada título é representado pela tag h seguido por um número em ordem decrescente de importância.
+		O título mais importante é o h1, o subtítulo é h2, e assim por diante.
+		Após o título há uma quebra de linha automática.</p>
+
+	<h3 id="paragrafos"> Parágrafos </h3>
+
+	<p> A tag do parágrafo é p. Simplesmente abrir e depois fechar. Ao fim do parágrafo há uma quebra de linha
+		automática. </p>
+
+	<h3> Comentários </h3>
+
+	<p> O comentário só aparecerá para quem abrir o código, não na página final. Sua tag é !-- e para fechar apenas --.
+		Utilizado para anotar tarefas a fazer, indicações do que as linhas de código subsequentes fazem, etc.</p>
+
+	<!--Este é um exemplo de comentário escrito por mim e escondido do mundo lá fora xD-->
+
+	<h3> Formatação</h3>
+
+	<p> Tags de formatação não inserem quebra de linha. Essa característica pode ser alterada com o css,
+		mas no html simples é assim.</p>
+	<p>Importante também lembrar que a primeira opção é a que possui sentido semântico,
+		a segunda é meramente estético e por isso não utilizada.
+		O código deve seguir o que funciona melhor de acordo com os sistemas de busca vigentes.</p>
+
+	<p> O texto em <strong>negrito</strong> é feito com a tag strong. B de bold também funciona.</p>
+	<p> Já <em>em itálico</em>, utiliza-se a tag em, de emphasis. A tag i também funciona. </p>
+	<p> Um <mark>texto grifado</mark> utiliza a tag mark. </p>
+	<p> A tag small <small>deixa o texto menorzito.</small></p>
+	<p> <del>Riscado ao meio</del> é tag del. A Tag s também funciona.</p>
+	<p> <ins>Sublinhado</ins> é a tag ins. A tag u também é válida. </p>
+	<p> Texto normal <sub> texto um pouco abaixo</sub>. Tag sub.</p>
+	<p> Texto normal <sup> texto um pouco acima</sup>. Tag sup.</p>
+	<p> <q>Para citações</q> semânticas, a tag é q.</p>
+	<p> Para quebra de linha, utiliza-se a tag br (brake). Para cada linha que desejar pular,
+		bastar escrever o comando mais uma vez. </p>
+
+	<br>
+	<h3> Inserir Links e Imagens </h3>
+
+	<p> Um link é inserido pela tag a (anchor) seguida do atributo href.
+		Se estiver na mesma pasta basta digitar o nome do arquivo.
+		A palavra ou frase que terá o hyperlink é o que você digitar após o comando do link.</p>
+
+	<a href="sobre.html">sobre Capivara Crypto</a>
+	<br><br>
+
+	<img src="https://s2.glbimg.com/LhAMGEoh7FaPvO2mrPvNHDsqrP4=/0x0:4463x2289/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/m/N/bCZZjpSXy2O7vtzs0nVw/hq-banner.png"
+		alt="axie infinity" width="200">
+
+	<p> O comando para inserir uma imagem é o img seguido do atributo src (de source, fonte).
+		O atributo alt deve ser incluído por 2 motivos: será exibido caso a imagem esteja indisponível;
+		será lida pelo mecanismo de busca ou de leitura para cegos. </p>
+
+	<p> Direto da internet deve ser colado o endereço da imagem.
+		Se estiver na pasta do projeto, escreva o nome_da_subpasta/nome_da_imagem.jpg </p>
+
+	<a
+		href="https://www.google.com.br/url?sa=i&url=https%3A%2F%2Fwww.criptofacil.com%2Fempresa-do-axie-infinity-recebe-20-milhoes-em-investimento%2F&psig=AOvVaw0h5vxcv2I31YZ9SRgqaw0p&ust=1637260772671000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNipwemFoPQCFQAAAAAdAAAAABAV">
+
+		<img src="imagens/axie_infinity_2.jpg" alt="axie infinity 2" height="200">
+	</a>
+
+	<p> Essa segunda imagem é um link, olha que bacana.
+		Isso aconteceu porque o código de inserção da imagem está dentro do elemento do link.</p>
+
+	<p> Os atributos width e height alteram o tamanho das imagens.
+		Caso só um seja modificado, a proporção será mantida, caso ambos sejam modificados, a imagem perderá sua forma
+		original. </p>
+
+	<p>Para um link que abrirá o aplicativo de email da pessoa, utilize mailto: após o href. </p>
+	<a href="mailto:capivaracripto@gmail.com">capivaracripto@gmail.com</a>
+
+	<br>
+	<h3> Criar Listas e Tabelas </h3>
+
+	<p> Existem 3 tipos de lista: a desordenada, a ordenada e a de descrição. As tags estão abaixo e são intuitivas.<br>
+		ul: unordered list <br>
+		ol: ordered list <br>
+		li: list item </p> 
+
+	<h4> Unordered list </h4>
+
+	<ul>
+		<li> Item qualquer </li>
+		<li> Outro item qualquer </li>
+		<li> Mais um para fechar </li>
+	</ul>
+
+	<h4> Ordered list </h4>
+
+	<ol start="999" reversed>
+		<li> Primeiro </li>
+		<li> Segundo </li>
+		<li> Terceiro </li>
+	</ol>
+
+	<p>A lista ordenada pode receber os parâmetros: <br>
+	type=" " : recebe os atributos 1 (123), I (I II III), i (i ii iii), A (ABC) e a (abc). Possiblitando a ordem numérica
+	indo-arábica, romana ou alfabética tanto maiúscula quanto miníuscula. <br>
+	start=" " : define o início da lista. Recebe sempre um número, mas pode indicar também que começa na 5ª letra do alfabeto,
+	por exemplo. <br>
+	reversed : inverte a ordem. </p>
+	
+	<p>A lista de descrição é diferentona, possui seus próprios: <br>
+	dl: definition list <br>
+	dt: definition term (title) <br>
+	dd: definition data (description) </p> 
+
+	<h4>Definition List</h4>
+		<dl>
+			<dt>Primeiro termo</dt>
+			<dd>Primeira descrição</dd>
+			<dt>Segundo termo</dt>
+			<dd>Segunda descrição</dd>
+		</dl>
+
+
+	<p>A tabela será declarada pela tag table, tendo uma abertura e fechamento. <br>
+		Para cada linha, será criada uma tag pai, chamada tr, table row. <br>
+		Dentro da tr, criaremos a table head, th, cuja apresentação é em negrito e centralizada. <br>
+		Ou a table data, td, cuja apresentação é alinhada à esquerda.
+	</p>
+
+	<table>
+		<tr>
+			<th>Elemento</th>
+			<th>Tag</th>
+			<th>Significado</th>
+			<th>Estilo </th>
+		</tr>
+		<tr>
+			<td>Linha</td>
+			<td>tr</td>
+			<td>table row</td>
+			<td>tag pai dos demais, não aparece</td>
+		</tr>
+		<tr>
+			<td>Cabeçalho</td>
+			<td>th</td>
+			<td>table head</td>
+			<td>centralizado em negrito</td>
+		</tr>
+		<tr>
+			<td>Corpo</td>
+			<td>td</td>
+			<td>table data</td>
+			<td>alinhado à esquerda</td>
+		</tr>
+	</table>
+
+	<p>align="" e valign="" são parâmetros, de th e td, utilizados para alinhamento horizontal e vertical, 
+	respectivamente. <br>
+	Border-collapse: collapse - fará com que as bordas sejam uma só. A tabela naturalmente não possui bordas,
+	ela foi adicionada e modificada via css. <br>
+	Table pode receber o parâmetro width: 0~100%, para se adequar ao tamanho da tela, ou medidas absolutas. <br>
+	colspan=" " e rowspan=" ": parâmetros para th ou td que ocupam mais de uma linha ou coluna. No exemplo o
+	valor escolhido foi 2, mas pode ser maior. <br>
+	thead, tbody e tfoot podem ser utilizados para organizar melhor o código e tabela, separando o cabeçalho 
+	do corpo e do rodapé. É opcional e útil para tabelas maiores.
+	</p> 
+
+	<table>
+		<tr>
+			<th>Apenas</th>
+			<th colspan="2">Um Show</th>
+		</tr>
+		<tr>
+			<td rowspan="2">Personagens</td>
+			<td>Rigby</td>
+			<td>Mordecai</td>
+		</tr>
+		<tr>
+			<td>Saltitão</td>
+			<td>Musculoso</td>
+		</tr>
+		<tr>
+			<td>Fantasmão</td>
+			<td>Pairulito</td>
+			<td>Benson</td>
+		</tr>
+	</table>
+
+	<p>Tabelas podem ser utilizadas para a estrutura de um site. É uma maneira fácil de alinhar textos, imagens ou
+	o que você precisar. <br>
+	Elas aceitam a maioria das tags html em seu corpo.
+	</p>
+
+	<h3>Transferir e alterar</h3>
+
+	<p>Cada vez que você mudar o arquivo de lugar, salvar em outra pasta, mudar o nome de pastas,
+		seu programa deixará de funcionar.
+		Para salvar num pen drive ou enviar por email, por exemplo, deve-se comprimir o arquivo (zipá-lo).
+		Estando o arquivo em formato.zip, quando for extraído em outro computador ele funcionará normalmente xD</p>
+
+	<br><br><br><br><br>
+
+	<h2 id="titulo">Colorindo com o CSS</h2>
+
+	<p style="color:purple;">Utilizando o css, com o atributo style="" e o comando color: pude escrever este texto em
+		roxo. </p>
+	<p id="colorido">O id é identificado com um # e é individual.</p>
+	<p class="texto_verde">A class é identificada por um . e pode ser utilizada para mais de um elemento. </p>
+	<p class="texto_verde">Lembrando que id e class são atributos, que terão o ="" e estão na parte do html.
+		Na página do css você só preenche com o caracter e nome dado.</p>
+	<p>O id pode ser utilizado para criar um link dentro da própria página.
+		Utilizando a tag a href="#nome_do_seu_id". No caso, <a href="#paragrafos"> este link </a>levará até o id
+		parágrafos.</p>
+
+	<p>Você pode criar a sua cor utilizando o padrão RGB, cujos valores vão de 0 a 255 para os 3 parâmetros.
+		No RGBA, o A (alpha) define quão opaco ou transparente será, indo de 0 até 1.
+		Um exemplo seria <a id="specific">RGBA(111,55,77,0.7).</a><br>
+		O formato hexadecimal também é aceito. Indo de #000000 até #FFFFFF.
+		A cor anterior, desta vez totalmente opaca, é <a id="specific_2">#6f374d</a>.</p>
+
+	<p id="back">O fundo pode ser alterado pelo comando background-color. </p>
+
+	<p id="img"><b>O comando background-image é autoexplicativo. Selecione a imagem escrevendo url(endereço_dela).</b>
+	</p>
+	<p>Se você meter no elemento body, vai pra página inteira.<br>
+		A imagem se repetirá até cobrir a página caso você não escreva os seguintes comandos: <br>
+		background-repeat: no-repeat, repeat-x, repeat-y <br>
+		background-size: cover fará com que a imagem preencha todo o espaço sem se repetir. <br>
+		background-attachment: fixed dará um efeito maneiro de rolar o fundo enquanto você scrolla pela página.<br>
+		Funciona escrever tudo numa linha só sem tanto texto, mas terá que respeitar uma ordem específica.
+		Por exemplo: background: url(./endereço/aleatório.jpg) center/cover no-repeat fixed ;
+	</p>
+
+	<p>Comentário no CSS é /* e para fechar */.</p>
+
+	<p>A tag div é uma agrupadora. Ela junta tudo o que estiver entre seu começo e fim em um só elemento,
+		que poderá ser identificado com id, classe, o que for. Muito útil para edições e formatações futuras. <br>
+		Seu display é de bloco e não possui semântica.</p>
+
+	<p>O span é um agrupador inline. Não possui função semântica, não quebra linha, apenas junta.</p>
+
+	<p>Existem unidades de medida fixas e relativas. Abaixo estão as fixas que você pode usar.
+		Representadas por quadrados de, respectivamente: 1cm; 5mm; 1in(inch) - polegada; 32px(pixels);
+		32pt(pontos); 3pc(picas) - 12pt cada.</p>
+
+	<div class="cm"></div>
+	<div class="mm"></div>
+	<div class="in"></div>
+	<div class="px"></div>
+	<div class="pt"></div>
+	<div class="pc"></div>
+
+	<br><br><br>
+
+	O texto padrão é de 16px. Você pode mudar com o comando font-size: ??px.
+
+	<div class="container">
+		Este texto tem 20px.
+		<div class="inside">
+			Uma medida relativa é o em (elemento), que leva em conta a font-size do elemento na qual está contida.
+			Este texto tem 1.2em. <br>
+			<a id="rem">Existe também o rem, medida relativa à font-size do elemento raiz. No caso o html. Este aqui tem
+				1.2rem. </a>
+		</div>
+	</div>
+
+	<div>
+		<p>Existem unidades relativas à janela do navegador do usuário.
+		<div id="viewport_window">width: 50vw. vw é viewport window. Vai de 1 a 100.
+			50vw representa metade da tela na horizontal. </div>
+		<div id="viewport_height">width: 50vh. vh é viewport height. Vai de 1 a 100.
+			50vh representa metade da tela na vertical.</div><br>
+		vmin e vmax são relativos a qual for maior. Horizontal é maior em tela cheia e pc,
+		vertical em mobile e tela dividida. Bem mais estável em relação aos outros <br>
+		<div id="viewport_max">width: 50max.</div>
+		<div id="viewport_min">width: 50min.</div>
+		</p>
+	</div>
+	<p>Em um elemento contido dentro de outro, você pode utilizar a % para dizer qual será seu tamanho.
+		No exemplo abaixo, o retângulo interior tem o tamanho de 70% do exterior.
+	<div id="externo">
+		<div id="interno"></div>
+	</div>
+	</p>
+
+	<div id="base"></div>
+
+	<div id="naobase">
+		<div id="conteudo">
+			A vida não é um morango
+		</div>
+	</div>
+	<p>O comando margin põe uma margem para todos os lados. Caso queira apenas algumas delas,
+		defina margin-top: ou margin-left: por exemplo.
+	<div id="padding_ex">Padding é a margem que preenche.
+		Distanciará para dentro ao invés de para fora. Mesmo esquema da margem para os comandos.</div>
+	</p>
+
+	<div class="borda">
+		Borda, mané
+	</div>
+	<p>Bem de boa também. Apenas escrever border e definir quão espessa será (width), arredondada (radius), style and
+		color.</p>
+
+	<div class="quadrado borda"></div>
+
+	<p>Um elemento pode ter 2 ou mais classes e suas propriedades. <br>
+		No exemplo acima, class="quadrado borda" insere as propriedades definidas em quadrado e em borda no css.
+	</p>
+
+	<p>Metendo o border-radius em 50% você transforma um quadrado num círculo xD.
+		Dá até pra deixar a borda sem cor e deixar só o círculo lá.
+	<div id="circulo"></div>
+	</p>
+
+	<p>Sobre estilos de bordas:<br>
+		dotted- pontilhada<br>
+		dashed- tracejada<br>
+		solid- contínua<br>
+		none- inexistente<br>
+		hidden- escondida
+	</p>
+
+	<div class="borda colorida">Borda diferenciada pelos comandos border-bottom-color, border-right-color.</div>
+	<br>
+
+	<div class="bordiferenciada">Dá pra meter só oq vc quer um do ladin do outro,
+		respeitando os 4 cantos e começando sempre de cima com todas as alterações que quiser. <br>
+		No exemplo estão: border-width: 5px 10px 2px 15px; border-color: red green blue yellow;</div>
+	<br>
+
+	<div class="bordasimples">O jeito mais fácil de criar uma borda é simplesmente meter o comando
+		border seguido da espessura, estilo e cor, nesta ordem.<br>border: 4px dotted chocolate;</div><br>
+
+	<p>O box model mostra como a margem, padding e borda se relacionam. Todas se respeitam. <br>
+		O outline é uma maneira de colocar uma borda que ignora a todos, menos a margem. <br><br>
+
+
+		<img src="https://tableless.github.io/iniciantes/assets/img/box-model.png" alt="box model" width="500px">
+
+	</p>
+	<p>A cada elemento adicionado, o tamanho irá aumentar e isso pode prejudicar seu design. <br>
+		Para travar um tamanho fixo desde o início, use o comando: box-sizing: border-box.
+	</p>
+
+	<p> Para formatar o texto todo, selecionaremos o p{ no css e todos os parágrafos serão editados.<br>
+		Propriedades úteis ou interessantes:<br>
+		text-align: justify, center or left<br>
+		text-transform: uppercase, lowercase or capitalize (primeira letra de todas as palavras maiúscula)<br>
+		text-indent: 00px é o espaço antes da primeira frase do parágrafo. <br>
+		text-decoration: underline, overline, line through or none. None é útil para tirar o underline padrão abaixo dos
+		links.<br>
+		letter-spacing: 00px.<br>
+		line-height: 00px é o jeito absoluto. Colocar só 2, por exemplo, será 2x relativo ao tamanho da fonte;
+		o mesmo ocorre com porcentagens (ex: 150% o tamanho da fonte).<br>
+		word-spacing: 00px.<br>
+		text-shadow: 1px 1px #bbb; deslocamento à direita, deslocamento abaixo e cor da sombra.
+	</p>
+
+	<h3>Fontes</h3>
+
+	<p> Existem fontes proporcionais, em que cada letra ocupa seu devido espaço, e as monospace,
+		em que todas ocupam um espaço semelhante independente de sua forma.
+		Nas mono qualquer palavra de X letras terá o mesmo tamanho. <br>
+		Outro conceito é a serifa. Esta é um pequeno traço de um ou ambos os lados nas terminações de cada letra. Um
+		leve frufru.
+
+	<p>Agora partindo para a aplicação no código: <br>
+		font-family é o nome da fonte. Nomes compostos necessitam de aspas. É importante definir mais de uma fonte,
+		pois servirão de backup caso o dispositivo do usuário não suporte as preferenciais.<br>
+		font-family: Avantgarde , "Comic Sans MS", Arial. <br>
+		font-weight é a espessura da fonte. Você pode definir como normal ou bold,
+		mas também variar centenas de 100 a 900. Sendo 400 o normal e 700 o bold.
+		Algumas famílias de fonte não apresentarão variação significativa.<br>
+		font-variant: small-caps. Esse comando deixa todas as letras em seu formato maiúsculo,
+		mas mantém as verdadeiras maiúsculas maiores que as demais. <br>
+		<span id=small-caps> Frase com Nome Próprio para diferenciar, Gustavo. </span>
+	</p>
+
+	<!-- Descobrir um jeito que não seja o div para selecionar o elemento na linha e não haver quebra de linha -->
+
+	<p>Google Fonts é um site maneiro para encontrar e adquirir fontes customizadas. <br>
+		Após procurar e encontrar a fonte desejada, insira o link dela com link href em seu documento.
+		A partir deste momento, você poderá utilizá-la normalmente como uma família de fontes.
+	</p>
+	<p>Para fontes muito aleatórias de sites obscuros você criará de outra maneira.
+		@ font-face { font-family: NomeDaSuaFonte; scr: url{./arquivomãe/nomedessaesquisita.otf}}.
+		Faça isso sem os espaços, a partir daí você pode citar normalmente com o font-family. </p>
+	<p>Escolha fontes leves para que o seu site tenha um carregamento rápido.
+		Fontes mais pesadas servem para impressões, banners e esse tipo de material. Para carregar na web é leve.</p>
+
+	<h3>Modificando Links</h3>
+
+	<p>Para deixar seu link bonito e personalizado, há vários comandos legais. <br>
+		O 1º deles é text-decoration: none; para tirar o sublinhado.<br>
+		Color: básico para mudar cor do texto. <br>
+		Cursor: modifica a aparência do cursor ao passar por cima do link. <br>
+	</p>
+
+	<p>Um link possui alguns estados, dois fáceis são: visitado e não visitado. Ao não mencionar nada,
+		você modificará ambos. Para mudar a cor somente do link já visitado, por exemplo,
+		selecione sua classe .links e escreva :visited. Dessa forma o seu css será específico
+		para links já visitados xD.
+		<br>Para o non-visited você escreve :link.
+	</p>
+
+	<a class="links" href="#">cadastrar </a>
+
+	<p> Para criar um botão, é possível colocar uma cor diferente no background, inserir padding,
+		ajeitá-la com border-radius, talvez border.
+	</p>
+
+	<a id="botao" href="#botao">Botão </a>
+	&nbsp;
+
+	<a class="botao2" href="#botao">Botão 2 </a>
+	&nbsp;
+
+	<a class="botao2 hover" href="#botao">Botão 3 </a>
+	&nbsp;
+
+	<a class="botao2 active" href="#botao">Botão 4 </a>
+
+	<br>
+	<p>Selecionando a classe .links e adicionando :hover, você poderá alterar as propriedades do link
+		enquanto o mouse passa por cima dele. O que está mostrado no 3º botão. Esse é outro estado de um link.</p>
+
+	<p> Selecionando a classe .links e adicionando :active, você poderá definir o que acontecerá com o link
+		quando você clicar nele. O que está mostrado no 4º botão. Esse é outro estado de um link.
+	</p>
+
+	<p>Para dar espaço e manter na mesma linha, utilize o comando & n b s p (sem os espaços) seguido de ; .
+		Significa non breaking space.</p>
+
+	<!-- Jogar a frase acima para a parte de formatação ou por ali quando for deixar o site bala. -->
+
+	<h4>Links Ancorados</h4>
+
+	<p>Os links definidos pela tag <em>a</em> possuem atributos opcionais que definem seu comportamento ou incluem
+	informações adicionais. <br>
+	title="" - exibe uma mensagem como dica quando o mouse estiver posicionado sobre o link. <br>
+	download="" - baixa automaticamente o arquivo referenciado no link e permite que você defina um nome diferente para ele. <br>
+	target="_self" ou "_blank" - define em qual aba do navegador a página será aberta: self para a mesma aba e 
+	blank para uma nova. <br>
+	a href= "mailto:endereco@dominio.com?subject=assunto da mensagem" - nosso conhecido mailto, agora com 
+	uma personalização do assunto.
+	</p>
+
+	<h3>Estilizando Listas</h3>
+
+	<ul class="lista1">
+		<li class="liul">Item 1</li>
+		<li class="liul">Item 2</li>
+		<li class="liul">Item 3</li>
+	</ul>
+
+	<ol class="lista2">
+		<li class="liol">Item 1</li>
+		<li class="liol">Item 2</li>
+		<li class="liol">Item 3</li>
+	</ol>
+
+	<p>Comandos para listas: <br>
+		ul> list-style-type: none, disc, circle or square; <br>
+		ol> list-style-type: upper-roman (romano), upper or lower-alpha (a,b,c)<br>
+		list-style-image: url(./PastaMãe/arquivo.png); Para utilizar imagem qualquer como marcador. <br>
+		list-style-position: inside; deixará deixará o marcador junto ao texto caso você coloque uma borda e tal. <br>
+		Por padrão a lista já vem com margin e padding, que podem ser alterados. <br>
+		Também podemos colocar o de sempre: background-color; para o fundo da lista ou de seus itens,
+		e você pode alterar o estilo com os paddings, margins e border-radius.<br>
+		Dá para colocar link nos itens ancorando-os com o a href.
+	</p>
+
+	<h3>Display</h3>
+
+	<p>Modos de exibição na tela e propriedades desses elementos.</p>
+
+	<p>
+		<strong>display: block </strong>- bloco que ocupa do início até o fim da tela,
+		possível alterar as dimensões, possui quebra de linha <br>
+		<strong>display: inline </strong>- mantém na mesma linha, dimensões inalteráveis <br>
+		<strong>display: inline-block </strong>> comportamento do inline, permitindo alterar medidas <br>
+		<strong>display: none </strong>- elemento some sem deixar vestígios <br>
+		<strong>visibility: hidden</strong> - esconde o elemento, mas seus efeitos deformadores na página são mantidos
+		<br>
+	</p>
+
+	<p>O parágrafo possui margem inerente, dando aparência de quebras de linha superior e inferior</p>
+
+	<!-- Descobrir um jeito de selecionar uma seção e colocar uma tag no seu início e fim.
+			Para encher de strongs nos comandos por toda a página de maneira facilitada. -->
+
+	<h3>Overflow</h3>
+
+	<p>Ocorre quando um elemento é maior que outro no qual está contido. Estará vazando. Possui alguns estados: <br>
+		<strong>Overflow: visible</strong> - O elemento estará extrapolando seus limite. <br>
+		<strong>Overflow: hidden</strong> - O sobressalente não será exibido. <br>
+		<strong>Overflow: scroll</strong> - Opção de rolar na vertical e horizontal, mesmo que não precise nas 2. <br>
+		<strong>Overflow: auto</strong> - Opção de rolagem somente na dimensão necessária. Se não há um tamanho máximo definido, 
+		fará com que a borda enquadre também o elemento maior que está vazando. <br>
+		<strong>Overflow-y</strong> ou <strong>-x</strong>: scroll, visible... - selecione o eixo desejado para tal
+		função.<br>
+		Caso dê uma bugada no dos eixos, deixe o outro eixo hidden e bola pra frente. Faça dar certo.
+	</p>
+
+	<h3>Alinhamento Horizontal</h3>
+
+	<p>Backend wet dreams. Como centralizar uma div. <em>Parte básica agora, mais virão no futuro.</em> <br>
+		<strong>margin: auto</strong> - centraliza o elemento ao adicionar margens proporcionais de ambos os lados. <br>
+		<strong>margin-left: auto</strong> - empurra para o máximo da direita e o mantém lá. O contrário também é verdadeiro.
+	</p>
+	<p>Tais propriedades só funcionam para blocos. Você pode mudar o display dos elementos para bloco, criar uma div para isso e tal.
+		Todavia, se quiser um display diferente precisará de outra solução. <br>
+		Uma delas é display: inline-block e usar o text-align: center, left ou right, o que você quiser na hora.
+	</p>
+
+	<h3>Position - static, relative, absolute, fixed & sticky</h3>
+
+	<p>A posição <strong>estática</strong> é a padrão e imutável. Ela marca o posicionamento natural do elemento, servindo de referência
+		à alteração via <strong>position: relative</strong>. <br>
+		Após declarar desta forma, podemos simplesmente escrever <strong> top, left, right or bottom: 00px</strong> e o 
+		elemento será movimentado. <br>
+		O comportamento será semelhante ao de uma margem, com a diferença de que desta forma a sobreposição é possível.
+	</p>
+	<p>
+		Já no posicionamento <strong> absoluto</strong>, os demais elementos ocuparão a sua origem, pois é como se ele não estivesse ali. <br>
+		Ele pode ser deslocado livremente para qualquer canto ou permanecer estático em relação a outros elementos. <br>
+		Seu posicionamento agora será em relação ao primeiro elemento ascendente que <b>não</b> seja position: static. <br>
+		Para deixar um menor na borda de um maior, este deverá ser declarado como relative ou absolute e esse 
+		ter 2 parâmetros zerados, por exemplo: bottom e right: 0 px. <br>
+		Único posicionamento em que o tipo do pai é relevante.
+	</p>
+	<p>
+		O <strong> position: fixed</strong> é em referência ao viewport. Livre para ser mandado a qualquer canto e deixa o spawn livre. <br>
+		Seu grande diferencial é manter-se fixo enquanto você rola pela página. Geralmente é aquele ícone de suporte,
+		chame no zap e afins, constante no canto direito inferior da tela independente da altura da página que você leitor está. 
+	</p>
+	<p>
+		O <strong>position: sticky</strong> começa em algum lugar e se mantém fixo com a rolagem. <br>
+		Seus diferenciais são: mantém o fluxo normal da aplicação e os outros elementos respeitam a sua origem 
+		(não se sobrepõe a ele, apesar do contrário ser verdadeiro). <br>
+		Utilização comum é uma barra de aviso no início da página que permanecerá no topo com a rolagem.
+	</p>
+
+	<h3>Float</h3>
+
+	<img id="floating_donut" src="./Imagens/floating_donut.jpg" alt="Rosquinha flutuante">
+
+	<p>O float é a quebra automática de texto. Ao escrever float: left ou right, a imagem ficará numa dessas margens 
+		e o texto o abraçará. Sendo escrito do seu lado, embaixo e onde mais couber. <br>
+		Para counterar isso, existe a tag <strong>clear: right, left ou both</strong> para ser colocada no texto. 
+		Nesse caso, ele irá ignorar o float e não será escrito na mesma linha de uma imagem ou outro elemento qualquer.
+	</p>
+	<p>
+		Outra aplicação possível para o float é a criação de menus. Pois quando o float é usado numa lista ou num
+		conjunto de imagens, elas ficam uma ao lado da outra e isso é positivo para um design de navegação.
+	</p>
+	<ul id="menu_float_ul">
+		<li class="menu_float_li">Home</li>
+		<li class="menu_float_li">Produtos</li>
+		<li class="menu_float_li">Sobre</li>
+		<li class="menu_float_li">Contato</li>
+	</ul>
+
+	<br><br>
+	<h3>Alinhamento Vertical</h3>
+
+	<div class="caxeta">
+		<div class="cardv">
+			<div class="contv1">Texto alinhado</div>
+		</div>
+		<p>O primeiro jeito é o mais simples, porém sua aplicação depende de valores exatos. <br>
+		Neste caso, um <em>text-align: center</em> e um <em>line-height: 150px</em>. Não sei porque o correto é utilizar
+		o valor de width e não de height, mas funciona. <br>
+		Método frágil pois precisamos do tamanho exato do elemento exterior (no caso 300, 150) para implementar.
+		</p>
+	</div>
+
+	<div class="caxeta">
+		<div class="cardv">
+			<div class="contv2">Texto alinhado</div>
+		</div>
+		<p class="pvertical">Qual foi, malandro</p>
+	</div>
+
+	<div class="caxeta">
+		<div class="cardv">
+			<div class="contv3">Texto alinhado</div>
+		</div>
+	</div>
+
+	<p>Vai ficar tudo bugado assim mesmo?</p>
+
+	<h3> Pô isso aqui n tá legal</h3>
+
+	<h3>Formulários (PUC)</h3>
+
+
+
+
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+
+
+</body>
+
+</html>

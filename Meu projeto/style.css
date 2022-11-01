@@ -1,0 +1,310 @@
+#colorido{
+	color: red;
+}
+
+#titulo{
+	color: blue;
+}
+
+.texto_verde{
+	color: green;
+}
+
+#specific{
+	color:rgba(111, 55, 77, 0.7);
+}
+
+#specific_2{
+	color: #6f374d;
+}
+
+#back{
+	background-color: #00ffff;
+}
+
+#img{
+	background-image: url(./Imagens/fundo2.jpg);
+}
+
+/* Comentários no CSS são assim */ 
+
+.cm{
+	background-color: dodgerblue;
+	width: 1cm;
+	height: 1cm;
+}
+
+.mm{
+	background-color: hotpink;
+	width: 5mm;
+	height: 5mm;
+}
+
+.in{
+	background-color: honeydew;
+	width: 1in;
+	height: 1in;
+}
+
+.px{
+	background-color: dimgray;
+	width: 32px;
+	height: 32px;
+}
+
+.pt{
+	background-color: darkorange;
+	width: 32pt;
+	height: 32pt;
+}
+
+.pc{
+	background-color: crimson;
+	width: 3pc;
+	height: 3pc;
+}
+
+.container{
+	font-size: 20px;
+}
+
+.inside{
+	font-size: 1.2em;
+}
+
+#rem{
+	font-size: 1.2rem;
+}
+
+#externo{
+	width: 150px;
+	height: 100px;
+	background-color: royalblue;
+}
+
+#interno{
+	width: 70%;
+	height: 70%;
+	background-color: lightgoldenrodyellow;
+}
+
+#base{
+	height: 10px;
+	background-color: indianred;
+}
+
+#naobase{
+	background-color: steelblue;
+	color: white;
+	margin: 10px;
+}
+
+.borda{
+	border-width: 5px;
+	border-style: solid;
+	border-color: navajowhite;
+	border-radius: 5px;
+}
+
+.quadrado{
+	width: 100px;
+	height: 100px;
+	background-color: lightyellow;
+}
+
+#circulo{
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	background-color: lightyellow;
+}
+
+.colorida{
+	border-bottom-color: lawngreen;
+	border-right-color: aquamarine;
+}
+
+.bordiferenciada{
+	border-width: 5px 10px 2px 15px;
+	border-color: red green blue yellow;
+	border-style: solid;
+}
+
+.bordasimples{
+	border: 4px dotted chocolate;
+}
+
+#small-caps{
+	font-variant: small-caps;
+}
+
+.links{
+	text-decoration: none;
+	color: darkorange;
+	cursor: help;
+}
+
+#botao{
+	text-decoration: none;
+	color: white;
+	background-color: red;
+	padding: 10px;
+	border-radius: 7px;
+}
+
+.botao2{
+	text-decoration: none;
+	color: red;
+	background-color: white;
+	padding: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 7px;
+	border: 2px solid red;
+}
+
+.hover:hover{
+	background-color: red;
+	color: white;
+}
+
+.active:active{
+	background-color: red;
+	color: white;
+}
+
+.lista1{
+	list-style-type: circle;
+	list-style-position: inside;
+	color: white;
+	background-color: gray;
+	padding: 5px;
+	padding-left: 10px;
+	border: orange solid 5px;
+	border-radius: 7px;
+	box-sizing: border-box;
+	width: 150px;
+	font-weight: 900;
+	font-family: "Comic Sans MS";
+}
+
+.liul{
+	background-color: black;
+	padding: 5px;
+	border: white solid 3px;
+	border-radius: 4px;
+	margin: 7px 7px 7px 0px;
+}
+
+.liol{
+	background-color: yellow;
+	padding: 5px;
+	border: blue solid 5px;
+	border-radius: 5px;
+	margin: 7px;
+}
+
+.lista2{
+	list-style-type: upper-roman;
+	list-style-position: inside;
+	color: black;
+	background-color: deeppink;
+	padding: 5px;
+	padding-left: 10px;
+	border: orange solid 5px;
+	border-radius: 7px;
+	box-sizing: border-box;
+	width: 25vw;
+	font-family: "URW Chancery L";
+	font-weight: 900;
+}
+
+#viewport_window{
+	width: 50vw;
+	background: darkkhaki
+}
+
+#viewport_height{
+	width: 50vh;
+	background: darkseagreen
+}
+
+#viewport_max{
+	width: 50vmax;
+	background: lightgreen
+}
+
+#viewport_min{
+	width: 50vmin;
+	background: lightpink
+}
+
+#padding_ex{
+	padding: 10px;
+	background: paleturquoise
+}
+
+#floating_donut{
+	float: left;
+	width: 120px;
+	margin-right: 10px;
+}
+
+#menu_float_ul{
+	list-style-type: none;
+	margin-left: 20vw;
+}
+
+.menu_float_li{
+	float: left;
+	padding: 10px;
+	background-color: #a3b5c7;
+	margin: 5px;
+}
+
+.cardv{
+	position: relative;
+	float: left;
+	clear: left;
+	width: 300px;
+	height: 150px;
+	border: 2px solid brown;
+	text-align: center;
+}
+
+.contv1{
+	line-height: 150px;
+}
+
+.contv2{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.contv3{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50%);
+}
+
+.caxeta{
+	position: relative;
+	clear: left;
+}
+
+.pvertical{
+	position: absolute;
+	top: 50%;
+	transform: translateY( -50%);
+}
+
+table, th, td {
+	border: 1px solid pink;
+	border-collapse: collapse;
+}
+
+th, td{
+	padding: 10px;
+}
