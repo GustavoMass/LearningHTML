@@ -630,7 +630,7 @@
 
 	<h2>Javascript</h2>
 
-	<p>Para colocar o Javascript para funcionar, você pode abrir uma tag script interna e meter seu código. <br>
+	<p><i>O famoso JS.</i> Para colocá-lo para funcionar, você pode abrir uma tag script interna e meter seu código. <br>
 	Ou a melhor alternativa, que é criar um arquivo separado e chamar utilizando a tag script com o argumento
 	src apontando para ela. <br>
 	Uma boa prática é chamar o script somente quando for necessário ou ao fim da página. Deste modo,
@@ -640,11 +640,42 @@
 	<script src="script.js"></script>
 
 	<p>O comando console.log("") será muito utilizado para validar o que estamos fazendo. Para encontrá-lo,
-	você deverá ir para a aba console no modo de inspeção.</p>
+	você deverá ir para a aba console no modo de inspeção. <br>
+	É o famoso print versão js. Pra visualizar qualquer coisa a função será chamada.</p>
 
 	<!-- <script>
 		alert("Hello World")
 	</script> -->
+
+	<h3>Variáveis</h3>
+	<p>Para criar variáveis, primeiramente você precisará definir de qual tipo elas serão. <br>
+	A mais simples delas é a <strong>var</strong>. Você pode declará-la e inicializá-la em conjunto ou separadamente. Ex: <br>
+	var generica1 = "fui declarada e inicializada no mesmo comando"; ou <br>
+	var generica2; <br>
+	generica2 = "fui declara acima, mas inicializada somente na linha abaixo."; <br></p>
+	<p>Inicializar é atribuir o primeiro valor à variável. <br>
+	Nota-se que a variável é declara uma única vez, posteriormente ela é refenciada apenas pelo seu nome. </p>
+	
+	<p><strong>\n</strong> inserido no meio da string pulará uma linha.</p>
+
+	<h3>Operações e tipos de dados</h3>
+	
+	<p>Em Javascript, existem somente 5 tipos de dados: null, undefined, boolean, number e string. <br>
+	Null e undefined possuem diferenças sutis. Null indica a ausência de um objeto, enquanto undefined indica a
+ 	ausência de um valor qualquer. <br>
+	Uma variável que não teve valor atribuído é undefined. Já quando o retorno esperado é um objeto e não 
+	há nada lá, o valor será null. </p>
+	<p>As operações aritméticas são: +, -, *, /, %, ++ e --. <br>
+	Além das 4 básicas, encontramos o módulo (%), incremento (++) e decremento (--). <br>
+	O módulo nada mais é do que o resto de uma divisão. <br>
+	Já ++ e -- adicionam um subtraem 1 da variável. Podem ser escritos simplesmente como nomeVariavel++; 
+	que já funciona. Importante ressaltar que se for escrever uma equação como numvar = --x ou numvar = x-- isso 
+	fará diferença no resultado final. Pois o tempo de execução é alterado. No primeiro caso, numvar seria 
+	igual a x-1. Já no segundo, numvar seria igual a x, e a variável x seria armazenada como x-1.  </p>
+
+
+
+
 
 
 
