@@ -615,6 +615,20 @@
 
 	<h3>Formulários (PUC)</h3>
 
+	<p>Formulários são úteis para qualquer envio e validação de dados. Sua tag é <em>form</em> e pode
+	receber diversos atributos. <br>
+	name="" - nome do formulário. As vezes temos mais de um, daí sua utilidade. <br>
+	method="post" - post ou get. Post é o padrão, dados seguros, get é mais veloz e dados são expostos. Use o post.<br>
+	action="" - url de destino para o processamento das informações.<br>
+	autocomplete="on" - on ou off. Default é on, autoriza o navegador a preencher automaticamente os campos.<br>
+	target="" - _self ou _blank. Especifica onde o navegador exiirá os dados submetidos pelo formulário.<br>
+	enctype="" - application/x-www-form-urlencoded é o default, codifica os caracteres pré envio. multipart/form-data 
+	é utilizado para upload de arquivos. text/plain envia qualquer tipo de dados em formato texto, 
+	sem converter caracteres especiais.<br>
+	novalidate - navegador não realizará as validações automáticas dos dados. Não use.<br>
+	</p>
+
+
 
 
 
