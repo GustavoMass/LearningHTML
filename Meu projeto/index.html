@@ -639,7 +639,7 @@
 
 	<script src="script.js"></script>
 
-	<p>O comando console.log("") será muito utilizado para validar o que estamos fazendo. Para encontrá-lo,
+	<p>O comando <strong>console.log()</strong> será muito utilizado para validar o que estamos fazendo. Para encontrá-lo,
 	você deverá ir para a aba console no modo de inspeção. <br>
 	É o famoso print versão js. Pra visualizar qualquer coisa a função será chamada.</p>
 
@@ -672,6 +672,51 @@
 	que já funciona. Importante ressaltar que se for escrever uma equação como numvar = --x ou numvar = x-- isso 
 	fará diferença no resultado final. Pois o tempo de execução é alterado. No primeiro caso, numvar seria 
 	igual a x-1. Já no segundo, numvar seria igual a x, e a variável x seria armazenada como x-1.  </p>
+	<p>Para facilitar a vida nas atribuições, você pode escrevê-las como +=, -=, *=, /= e %=. <br>
+	Neste caso, x /= 2; retornará o valor de x dividido por 2. Ao invés da expressão verbosa x = x / 2;</p>
+
+	<h3>Operadores Comparadores e Lógicos</h3>
+
+	<p>O símbolo de <strong>=</strong> em Javascript significa recebe. A = x se lê: a recebe x. <br>
+	A comparação de igualdade é feita por <strong>==</strong>. Esta comparação desconsidera o tipo, ou seja, 3 e "3"
+	são considerados a mesma coisa.<br>
+	Para comparar tanto valor quanto tipo, utiliza-se <strong>===</strong>. <br>
+	Para descobrir se valores são diferentes, utiliza-se <strong>!=</strong>. Deste modo o tipo é novamente 
+	desconsiderado. 3 e "3" retornaria true. <br>
+	Para que tanto valor quanto tipo sejam considerados na diferença, utiliza-se <strong>!==</strong>. <br>
+	Também existem os intuitivos: menor que < , maior que >, menor ou igual a <= e maior ou igual a >=. </p>
+	<p>Operadores Lógicos em JS são: <br>
+	<strong>&&</strong> - e. Ambas as condições precisam ser verdadeiras.<br>
+	<strong>||</strong> - ou. Apenas uma condição precisa ser verdadeira.<br>
+	<strong>!</strong> - negação. Serve apenas para inverter o valor de variáveis booleanas.
+	</p>
+
+	<h3>Informações Úteis Gerais</h3>
+	<p>Para converter uma string para número, utiliza-se <strong>parseInt()</strong> caso seja inteiro ou 
+	<strong>parseFloat()</strong> 
+	caso possua casas decimais.
+	</p>
+
+	<p><strong>Alert()</strong> e <strong> prompt()</strong> são funções que geram um pop-up. Alert simplesmente 
+	gera o pop-up para você assimilar e fechar, enquanto o prompt dá uma caixa de texto para que o usuário 
+	insira qualquer valor a ser retornado como string.</p>
+
+	<p>if (condição = entre parênteses) { <br>
+			&nbsp &nbsp &nbsp ação entre chaves; <br>
+		} <br>
+		else if (segunda condição = x) { <br>
+			&nbsp &nbsp &nbsp bloco de ação caso da segunda opção;<br>
+			&nbsp &nbsp &nbsp ação subsequente; <br>
+		} <br>
+		else {<br>
+			&nbsp &nbsp &nbsp ação divergente; <br>
+		}
+	</p>
+
+	<p>Condicional em JS é if, else if e else. A condição é sempre entre parênteses, podendo ser composta, ex: 
+	(idade <=18 || idade >= 65). A ação encadeada deve ser escrita dentro de chaves, podendo conter uma ação 
+	única ou bloco de ações.
+	</p>
 
 
 
@@ -680,7 +725,29 @@
 
 
 
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	
 
 
