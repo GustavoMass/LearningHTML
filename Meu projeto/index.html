@@ -719,11 +719,11 @@
 	</p>
 
 	<h3>Operador Ternário</h3>
-	<p>É a famosa arrow function, função de uma linha, aquela coisa linda. Escrita da seguinte maneira <br>
+	<p>Verificação em apenas uma linha. Caso verdadeiro seguirá a primeira instrução, caso falso a segunda. 
+		Separado somente por uma interrogação (?) e dois pontos (:). <br>
 	Condição ? açãoVerdadeiro : açãoFalso; <br>
 	Ex: idade >= 18 ? console.log("Pode") : console.log("Não pode"); <br>
-	Verificação em apenas uma linha, caso verdadeiro seguirá a primeira instrução, caso falso a segunda. 
-	Separado somente por uma interrogação (?) e dois pontos (:).</p>
+	</p>
 
 	<h3>Switch case</h3>
 
@@ -803,11 +803,87 @@
 	Em nosso caso hipotético, poderia imprimir os nomes dos alunos ("Juca","Maciel","Felícia")
 	</p>
 
+	<h3>Funções</h3>
 
+	<p>Funções são as mais poderosas armas da programação. Podem variar um bocado de acordo com os objetivos do 
+		programador. Elas nada mais são do que blocos de código reexecutáveis. Cada função terá seu nome, 
+		possíveis argumentos, ação a ser realizada e possível retorno. Veja o exemplo de uma abaixo, declarada 
+		pela palavra reservada <strong>function</strong>.
+	</p>
+	<p>Function media(n1, n2) { <br>
+		&nbsp &nbsp &nbspvar nota1 = n1; <br>
+		&nbsp &nbsp &nbspvar nota2 = n2; <br>
+		&nbsp &nbsp &nbspmedia = (nota1 + nota2) / 2; <br>
+		&nbsp &nbsp &nbspconsole.log(media); <br>
+	}</p>
+	<p>No exemplo acima, poderemos chamar a função média, dando diferentes valores para n1 e n2 e a função 
+		será executada. Veja: <br>
+		media (9,6); <br>
+		media (8,5);
+	</p>
 
+	<p>Caso você queira uma função imutável, que realize uma ação independente de variáveis externas, basta 
+		deixar os parênteses vazios, ex: function invariavel(){...}. <br>
+		Agora vamos repetir o exemplo acima com uma função que retorna um valor. Utilizaremos a palavra 
+		reservada <strong>return</strong> e manipularemos o retorno em seguida.
+	</p>
 
+	<p>Function media(n1, n2) { <br>
+		&nbsp &nbsp &nbspvar nota1 = n1; <br>
+		&nbsp &nbsp &nbspvar nota2 = n2; <br>
+		&nbsp &nbsp &nbspmedia = (nota1 + nota2) / 2; <br> <br>
+		&nbsp &nbsp &nbspreturn media; <br>
+	} <br>
+	var resultado1 = media (9,6); <br>
+	var resultado2 = media (8,5); <br> <br>
+	console.log(resultado1 + " e " + resultado2);
+	</p>
 
+	<p>A famosa <i>Arrow Function</i> nada mais é do que uma função anônima. Ela é criada quando uma variável 
+	é declarada recebendo uma função, mas de forma simplificada, omitindo alguns termos. Sua escrita é a seguinte: 
+	<br> var arrowFun = (arg1, arg2) => { return (arg1+arg2) / 2;} <br>
+	A variável pode ter qualquer nome e retornar qualquer coisa. O interessante é que a palavra reservada function 
+	foi omitida, o código ficará menor e você chamará a função pelo nome da variável. Seu comportamento permanece 
+	o mesmo, arrow function é apenas um jeito de escrever funções de uma forma mais direta, simplificada. </p>
 
+	<h3>Objetos</h3>
+
+	<p>Objetos em JS são os famosos dicionários, maps. É como uma lista, na qual são guardadas chaves e valores 
+		específicos. São criados com {} colchetes e no formato chave: valor. Muito importante não esquecer dos 
+		dois pontos : entre chave e valor e também da vírgula entre as duplas. Ex: <br>
+		var objeto1 = { chave1: "valor1", chave2: 8.7}
+	</p>
+
+	<p>Objetos são muito úteis para guardar informações e chamá-las de forma mais fácil. Para manipular o 
+		valor1 do exemplo acima, basta chamá-lo com o nome do objeto.chave (nome do objeto "ponto" chave do 
+		objeto). Ex: <br>
+		console.log(objeto1.chave1); <br>
+		console.log(objeto1["chave1"]); também funcionaria, chamando a chave com os "". <br>
+	</p>
+	<p>	Dentro de um objeto, as chaves possuem o mesmo comportamento de uma variável, mas são chamados de 
+		propriedades. Isso posto, podem receber qualquer tipo de dado, inclusive arrays e outros objetos. Ex 
+		de um objeto com array e seu chamado: <br>
+		var aluno = {nome: "Kleber", notas: [7.5, 5.0]}; <br>
+		console.log(aluno.notas[1]); <br>
+		Este último comando imprimirá a nota que está índice 1 do array, que por sua vez está dentro do objeto. <br>
+		console.log(aluno[notas][1]); também funcionaria.
+	</p>
+
+	<p>Para inserir outras propriedades no objeto, basta escrever um comando como: <br>
+	aluno.matricula = 123456; <br>
+	Mesmo que você nunca tenha usado tal chave, ela e seu valor serão inseridas no objeto na última posição. <br>
+	aluno["sobrenome"] = "Oliveira"; funciona igualmente.</p>
+
+	<p>É interessante adicionar via string porque te dá possibilidades. <br>
+	var nomeNovaProp = "sobrenome"; <br>
+	aluno[nomeNovaProp] = "Oliveira"; <br>
+	No objeto, a chave salva seria sobrenome: "Oliveira". Isso é muito útil pois facilitará a manutenção do código. 
+	Se você quiser mudar o nome da chave, basta modificá-lo uma vez, sem alterar todos os locais onde a variável 
+	aparece, é utilizada ou manipulada. É a diferença entre modificar uma string e mexer no código todo.</p>
+
+	<p>var objetoQualquer = new Object(); <br>
+	É outro jeito de inicializar um objeto vazio, para ser incrementado posteriormente com os métodos mencionados 
+	acima.</p>
 
 
 
