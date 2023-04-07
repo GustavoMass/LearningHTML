@@ -753,10 +753,55 @@
 
 	<h3>Loops: for e while</h3>
 	
-	<p></p>
+	<p>for (var i = 5; i < 10; i++){ <br>
+		&nbsp &nbsp &nbsp&nbsp console.log("Executando o for, pela " + i + " vez");
+	<br> }
+	</p>
 
+	<p>Para o for precisaremos de uma variável, saber até quando é para rodar e de quanto será o incremento 
+		a cada laço. Importante ressaltar que ali nós declaramos a variável, mas você pode usar outras já 
+		inicializadas como parâmetro. O que provavelmente será feito em situações reais. </p>
+		
+	
 
+	<p>Segue um exemplo de laço de repetição while com a anteriormente declara var j = 0; <br> <br>
+	while (j < 10) { <br>
+		&nbsp &nbsp &nbsp&nbsp console.log("While rodando pela " + i + " vez"); <br>
+		&nbsp &nbsp &nbsp&nbsp j++; <br>
+	}
+	</p>
 
+	<h3>Arrays</h3>
+
+	<p>var vetor1 = new Array("String", 99, true, variavel1, objeto22); <br>
+	Qualquer tipo de dado pode estar dentro de um array. Para visualizar seus elementos, você os chamará pela 
+	sua posição no índice, lembrando que começa sempre em 0. <br>
+	console.log(vetor1[3]); <br>
+	No exemplo, o valor retornado seria a variavel1. <br>
+	Outra forma de inicializar o array é: <br>
+	var vetor1 = ["Qualquer coisa", "realmente qualquer coisa"]; <br>
+	&nbsp &nbsp &nbsp console.log(vetor1.length);
+	</p>
+	<p>for (var i = 0; i < vetor1.length; i++){ <br>
+		&nbsp &nbsp &nbsp console.log(vetor1[i]); <br>
+	}</p>
+
+	<p>Array aliado ao for é um recurso que será muito utilizado. Para simplificar a escrita em alguns casos, 
+	existem os métodos: <br>
+	for (var aluno in alunos) { <br>
+		&nbsp &nbsp &nbspconsole.log(aluno); <br>
+	} <br>
+	Neste caso a variavel aluno poderia ter qualquer nome, foi escrita deste modo apenas para facilitar o 
+	entendimento e é uma boa prática. <br>
+	O que realmente importa é que o <strong>in</strong> fará com que a variavel aluno imprima o <i>índice</i> (1,2,3...)
+	</p>
+	<p>Já o outro método é: <br>
+	for (var aluno of alunos) { <br>
+		&nbsp &nbsp &nbspconsole.log(aluno); <br>
+	} <br>
+	Neste caso, o <strong>of</strong> fará com que o console.log() imprima os <i>valores</i> indicados pelo índice. 
+	Em nosso caso hipotético, poderia imprimir os nomes dos alunos ("Juca","Maciel","Felícia")
+	</p>
 
 
 
