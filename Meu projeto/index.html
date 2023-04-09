@@ -884,6 +884,53 @@
 	<p>var objetoQualquer = new Object(); <br>
 	É outro jeito de inicializar um objeto vazio, para ser incrementado posteriormente com os métodos mencionados 
 	acima.</p>
+	
+	<h3>Métodos</h3>
+
+	<p>Quando um objeto tem uma variável nós chamamos de propriedade. Quanto tem uma função, nós chamamos de 
+	<strong>método</strong>. Veja um exemplo a seguir e como utilizá-lo na prática. <br>
+	var aluno = { <br>
+		&nbsp &nbsp &nbspnome: "Karol", <br>
+		&nbsp &nbsp &nbspnotas: [8, 5], <br><br>
+		&nbsp &nbsp &nbspmedia: function (n1, n2) { <br>
+			&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp	return (n1 + n2) / 2; <br>
+			&nbsp &nbsp &nbsp} <br>
+	} <br> <br>
+	console.log(aluno.nome); <br>
+	console.log(aluno.media(aluno.notas[0], aluno.notas[1]));
+	</p>
+	<p>O problema é que desta forma, quanto mais alunos, mais difícil será modificar o método caso necessário. 
+		Se houver + 1 prova ou média ponderada para 50 alunos, por exemplo, ferrou. Portanto, devemos declarar 
+		a função fora do objeto, e dentro dele colocaremos seu pseudônimo. Seguindo o ex acima, ficaria assim: <br><br>
+		function calcMedia (n1, n2) { <br>
+			&nbsp &nbsp &nbspreturn (n1 * 2 + n2) / 3; <br>
+		} <br> <br>
+		E dentro do objeto > { ... media: calcMedia, ... }
+	</p>
+
+	<p>Para otimizar ainda mais e deixar o código bala, aprenderemos o <strong>this</strong>. This fará com que 
+	o método utilize como argumentos os valores internos do objeto. Assim como se estivéssemos usando a palavra 
+	<i>este</i>. <br> <br>
+	function calcMedia () { <br>
+		&nbsp &nbsp &nbspreturn (this.notas[0] + this.notas[1]) / 2; <br>
+	} <br> <br>
+	console.log(aluno.media()); <br> <br>
+	Perceba que mesmo com o método declarado fora do objeto, o this funciona. Desta forma, não precisamos cada 
+	vez escolher novos argumentos para o método, mas apenas utilizar os que já estão junto deste no objeto. <br>
+	Obviamente, rodar a função calcMedia() sozinha dará erro, pois o this não foi definido. Para rodá-la, 
+	lembre-se de referenciá-la a um objeto. </p>
+
+	<h3>Construtores de Objetos</h3>
+
+	<p></p>
+
+
+
+
+
+
+
+
 
 
 
